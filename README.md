@@ -1,4 +1,37 @@
-# Angular - Codemirror component
+# ngx-codemirror
+
+**Fork of the official [ng2-codemirror](https://github.com/chymz/ng2-codemirror) library with angular-universal / Server side rendering support.**
+
+<br><br>
+
+## Installation
+
+`npm i --save ngx-codemirror@latest`
+
+## Configuration
+
+1. Install `npm i --save-dev @types/node`
+2. Modify your tsconfig.app.json adding this:
+
+```
+"compilerOptions": {
+    "types": [
+          "node"
+    ]
+}
+```
+
+3. Add this in your main tsconfig.json (if already not available):
+
+```
+"compilerOptions": {
+    "typeRoots": [
+        "node_modules/@types"
+    ]
+}
+```
+
+<br><br>
 
 Use the [CodeMirror (5.x)](http://codemirror.net/) code editor in your Angular application.
 

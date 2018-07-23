@@ -1,6 +1,6 @@
 {
-  "name": "ng2-codemirror",
-  "version": "1.1.3",
+  "name": "ngx-codemirror",
+  "version": "2.0.0",
   "description": "Angular2 Codemirror component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -11,19 +11,28 @@
   "keywords": [
     "angular",
     "angular2",
+    "ssr",
+    "universal",
+    "server-side-rendering",
     "component",
     "codemirror"
   ],
-  "author": "Simon Babay",
+  "authors": "Simon Babay",
+  "contributors": [
+    { "name" : "Stefano Cappa"
+    , "email" : "stefano.cappa.ks89@gmail.com"
+    , "url" : "https://github.com/Ks89"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chymz/ng2-codemirror.git"
+    "url": "git+https://github.com/Ks89/ngx-codemirror.git"
   },
   "bugs": {
-    "url": "https://github.com/chymz/ng2-codemirror/issues"
+    "url": "https://github.com/Ks89/ngx-codemirror/issues"
   },
-  "homepage": "https://github.com/chymz/ng2-codemirror#readme",
+  "homepage": "https://github.com/Ks89/ngx-codemirror#readme",
   "dependencies": {
     "codemirror": "^5.22.2"
   },

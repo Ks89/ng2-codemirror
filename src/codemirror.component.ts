@@ -11,7 +11,7 @@ import {
   OnDestroy,
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import * as CodeMirror from 'codemirror';
+// import * as CodeMirror from 'codemirror';
 
 /**
  * CodeMirror component
@@ -43,10 +43,16 @@ export class CodemirrorComponent implements AfterViewInit, OnDestroy {
 
   _value = '';
 
+  codemirror: any;
+
   /**
    * Constructor
    */
-  constructor() {}
+  constructor() {
+    if (typeof window !== 'undefined') {
+      this.codemirror = require('codemirror');
+    }
+  }
 
   get value() { return this._value; }
 
@@ -76,7 +82,7 @@ export class CodemirrorComponent implements AfterViewInit, OnDestroy {
    * Initialize codemirror
    */
   codemirrorInit(config) {
-    this.instance = CodeMirror.fromTextArea(this.host.nativeElement, config);
+    this.instance = this.codemirror.fromTextArea(this.host.nativeElement, config);
     this.instance.setValue(this._value);
 
     this.instance.on('change', () => {
