@@ -4,10 +4,6 @@
   "description": "Angular2 Codemirror component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "scripts": {
-    "prepublish": "npm run build",
-    "build": "node_modules/.bin/ngc -p tsconfig-aot.json"
-  },
   "keywords": [
     "angular",
     "angular2",
@@ -17,13 +13,10 @@
     "component",
     "codemirror"
   ],
+  "private": false,
   "authors": "Simon Babay",
   "contributors": [
-    {
-      "name": "Stefano Cappa",
-      "email": "stefano.cappa.ks89@gmail.com",
-      "url": "https://github.com/Ks89"
-    }
+    "Stefano Cappa <stefano.cappa.ks89@gmail.com> (https://github.com/Ks89)"
   ],
   "license": "MIT",
   "repository": {
@@ -57,5 +50,8 @@
     "@angular/core": "^2.1.0 || ^4.0.0",
     "@angular/forms": "^2.1.0 || ^4.0.0",
     "@angular/common": "^2.1.0 || ^4.0.0"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
