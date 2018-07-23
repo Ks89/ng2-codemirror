@@ -1,4 +1,4 @@
-# ngx-codemirror
+# @ks89/ngx-codemirror
 
 **Fork of the official [ng2-codemirror](https://github.com/chymz/ng2-codemirror) library with angular-universal / Server side rendering support.**
 
@@ -9,7 +9,7 @@
 
 ## Installation
 
-`npm i --save ngx-codemirror@latest`
+`npm i --save @ks89/ngx-codemirror@latest`
 
 ## Configuration
 

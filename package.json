@@ -1,5 +1,5 @@
 {
-  "name": "ngx-codemirror",
+  "name": "@ks89/ngx-codemirror",
   "version": "2.0.0",
   "description": "Angular2 Codemirror component",
   "main": "lib/index.js",
