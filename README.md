@@ -4,6 +4,9 @@
 
 <br><br>
 
+**Tested only with Angular 6.x.x and angular-cli 6.x.x**
+
+
 ## Installation
 
 `npm i --save ngx-codemirror@latest`
@@ -30,6 +33,12 @@
     ]
 }
 ```
+
+<br><br>
+
+## Contributions
+
+To build this project run `tsc` in the root folder.
 
 <br><br>
 

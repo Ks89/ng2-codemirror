@@ -4,3 +4,4 @@ node_modules/*
 aot/*
 lib/*
 npm-debug.log
+.DS_Store

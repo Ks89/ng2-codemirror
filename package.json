@@ -19,9 +19,10 @@
   ],
   "authors": "Simon Babay",
   "contributors": [
-    { "name" : "Stefano Cappa"
-    , "email" : "stefano.cappa.ks89@gmail.com"
-    , "url" : "https://github.com/Ks89"
+    {
+      "name": "Stefano Cappa",
+      "email": "stefano.cappa.ks89@gmail.com",
+      "url": "https://github.com/Ks89"
     }
   ],
   "license": "MIT",
