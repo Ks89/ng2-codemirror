@@ -1,7 +1,0 @@
-node_modules/*
-*.iml
-.idea
-aot/*
-lib/*
-npm-debug.log
-.DS_Store

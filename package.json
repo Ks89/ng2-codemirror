@@ -1,57 +1,58 @@
 {
-  "name": "@ks89/ngx-codemirror",
-  "version": "2.0.1",
-  "description": "Angular2 Codemirror component",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "keywords": [
-    "angular",
-    "angular2",
-    "ssr",
-    "universal",
-    "server-side-rendering",
-    "component",
-    "codemirror"
-  ],
-  "private": false,
-  "authors": "Simon Babay",
-  "contributors": [
-    "Stefano Cappa <stefano.cappa.ks89@gmail.com> (https://github.com/Ks89)"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ks89/ngx-codemirror.git"
+  "name": "ngx-codemirror",
+  "version": "3.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "serve": "npm run serve:dev",
+    "serve:dev": "ng serve --aot",
+    "serve:prod": "ng serve --prod --aot",
+    "build": "npm run build:lib && npm run build:main",
+    "build:lib": "ng build @ks89/ngx-codemirror --prod && npm run copy:build && npm run copy:other",
+    "build:lib:watch": "ng build @ks89/ngx-codemirror --prod --watch",
+    "build:main": "npm run build:main:dev",
+    "build:main:dev": "ng build --aot",
+    "build:main:prod": "ng build --prod --aot",
+    "copy:build": "cpr dist/ks89/ngx-codemirror @ks89/ngx-codemirror -o",
+    "copy:other": "cpr README.md @ks89/ngx-codemirror/README.md -o && cpr LICENSE @ks89/ngx-codemirror/LICENSE -o",
+    "clean": "rimraf @ks89 && rimraf dist"
   },
-  "bugs": {
-    "url": "https://github.com/Ks89/ngx-codemirror/issues"
-  },
-  "homepage": "https://github.com/Ks89/ngx-codemirror#readme",
+  "private": true,
   "dependencies": {
-    "codemirror": "^5.22.2"
+    "@angular/animations": "~10.0.6",
+    "@angular/common": "~10.0.6",
+    "@angular/compiler": "~10.0.6",
+    "@angular/core": "~10.0.6",
+    "@angular/forms": "~10.0.6",
+    "@angular/platform-browser": "~10.0.6",
+    "@angular/platform-browser-dynamic": "~10.0.6",
+    "@angular/router": "~10.0.6",
+    "codemirror": "^5.22.2",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.3"
   },
   "devDependencies": {
-    "@angular/animations": "^4.0.0",
-    "@angular/common": "^2.1.0 || ^4.0.0",
-    "@angular/compiler": "^2.1.0 || ^4.0.0",
-    "@angular/compiler-cli": "^2.1.0 || ^4.0.0",
-    "@angular/core": "^2.1.0 || ^4.0.0",
-    "@angular/forms": "^2.1.0 || ^4.0.0",
-    "@angular/platform-browser": "^2.1.0 || ^4.0.0",
-    "@angular/platform-server": "^2.1.0 || ^4.0.0",
-    "@types/ckeditor": "0.0.33",
-    "@types/core-js": "^0.9.34",
-    "@types/node": "^6.0.45",
-    "rxjs": "^5.2.0",
-    "typescript": "^2.2.1",
-    "zone.js": "^0.8.5"
-  },
-  "peerDependencies": {
-    "@angular/core": "^2.1.0 || ^4.0.0",
-    "@angular/forms": "^2.1.0 || ^4.0.0",
-    "@angular/common": "^2.1.0 || ^4.0.0"
-  },
-  "directories": {
-    "lib": "lib"
+    "@angular-devkit/build-angular": "~0.1000.5",
+    "@angular-devkit/build-ng-packagr": "~0.1000.5",
+    "@angular/cli": "~10.0.5",
+    "@angular/compiler-cli": "~10.0.6",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.12.54",
+    "codelyzer": "^6.0.0",
+    "cpr": "^3.0.1",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~3.3.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^10.0.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.9.5"
   }
 }

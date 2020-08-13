@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+
+// force codemirror's height https://codemirror.net/demo/resize.html
+.CodeMirror {
+  border: 1px solid #eee;
+  height: auto !important;
+}
