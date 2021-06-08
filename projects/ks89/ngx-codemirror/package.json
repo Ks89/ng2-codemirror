@@ -1,21 +1,21 @@
 {
   "name": "@ks89/ngx-codemirror",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Angular Codemirror component",
   "license": "MIT",
   "author": "Stefano Cappa",
   "engines": {
-    "node": ">=14.7.0",
-    "npm": ">=6.14.7"
+    "node": ">=14.17.0",
+    "npm": ">=7.16.0"
   },
   "homepage": "https://github.com/Ks89/ngx-codemirror",
   "peerDependencies": {
-    "@angular/common": ">= 10.0.0",
-    "@angular/core": ">= 10.0.0",
+    "@angular/common": ">= 12.0.0",
+    "@angular/core": ">= 12.0.0",
     "codemirror": ">= 5.22.2"
   },
   "dependencies": {
-    "tslib": ">= 2.0.0"
+    "tslib": ">=2.1.0"
   },
   "repository": {
     "type": "git",

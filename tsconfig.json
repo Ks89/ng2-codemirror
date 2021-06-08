@@ -1,6 +1,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ks89/ngx-codemirror": [
+        "dist/ks89/ngx-codemirror"
+      ],
+      "@ks89/ngx-codemirror/*": [
+        "dist/ks89/ngx-codemirror/*"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -13,22 +21,20 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2017",
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
     ],
-    "paths": {
-      "@ks89/ngx-codemirror": [
-        "dist/ks89/ngx-codemirror/ks89-ngx-codemirror",
-        "dist/ks89/ngx-codemirror"
-      ]
-    },
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
     "strictTemplates": true
   }
 }

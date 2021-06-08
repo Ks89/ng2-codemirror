@@ -4,7 +4,7 @@
 
 <br>
 
-**Tested only with Angular 10.x.x and angular-cli 10.x.x**
+**Tested only with Angular 12.x.x and angular-cli 12.x.x**
 
 
 ## Installation
@@ -79,7 +79,7 @@ To build this project run `npm run build:lib && npm start` in the root folder.
 
 The MIT License (MIT)
 
-Copyright (c) 2018-2020 Stefano Cappa (Ks89)
+Copyright (c) 2018-2021 Stefano Cappa (Ks89)
 Copyright (c) 2016 Simon Babay
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

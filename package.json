@@ -1,18 +1,30 @@
 {
-  "name": "ngx-codemirror",
-  "version": "3.0.0",
+  "name": "@ks89/ngx-codemirror",
+  "version": "4.0.0",
+  "description": "Angular Codemirror component",
+  "license": "MIT",
+  "author": "Stefano Cappa",
+  "homepage": "https://github.com/Ks89",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ks89/ngx-codemirror.git"
+  },
+  "engines": {
+    "node": ">=14.17.0",
+    "npm": ">=7.16.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "serve": "npm run serve:dev",
     "serve:dev": "ng serve --aot",
-    "serve:prod": "ng serve --prod --aot",
+    "serve:prod": "ng serve --configuration production --aot",
     "build": "npm run build:lib && npm run build:main",
-    "build:lib": "ng build @ks89/ngx-codemirror --prod && npm run copy:build && npm run copy:other",
-    "build:lib:watch": "ng build @ks89/ngx-codemirror --prod --watch",
+    "build:lib": "ng build --configuration production @ks89/ngx-codemirror && npm run copy:build && npm run copy:other",
+    "build:lib:watch": "ng build --configuration production @ks89/ngx-codemirror --watch",
     "build:main": "npm run build:main:dev",
     "build:main:dev": "ng build --aot",
-    "build:main:prod": "ng build --prod --aot",
+    "build:main:prod": "ng build --prod",
     "copy:build": "cpr dist/ks89/ngx-codemirror @ks89/ngx-codemirror -o",
     "copy:other": "cpr README.md @ks89/ngx-codemirror/README.md -o && cpr LICENSE @ks89/ngx-codemirror/LICENSE -o",
     "clean": "rimraf @ks89 && rimraf dist"
@@ -37,21 +49,16 @@
     "@angular/cli": "~12.0.3",
     "@angular/compiler-cli": "~12.0.3",
     "@types/jasmine": "~3.6.0",
-    "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.12.54",
-    "codelyzer": "^6.0.0",
+    "codelyzer": "^6.0.2",
     "cpr": "^3.0.1",
     "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.3.3",
+    "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "ng-packagr": "^12.0.3",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
     "typescript": "~4.2.4"
   }
 }

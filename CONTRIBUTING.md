@@ -12,9 +12,10 @@
 3. `cd ../..`
 4. `npm run clean`
 5. `npm run build:lib`
-6. `npm publish @ks89/ngx-codemirror`
-7. `git push origin master`
-8. `git push origin vx.x.x`  <-- tag name created by npm version (for instance v5.0.1)
+6. `cd @ks89/ngx-codemirror`
+7. `npm publish`
+8. `git push origin master`
+9. `git push origin vx.x.x`  <-- tag name created by npm version (for instance v1.0.1)
 
 ## Beta and RC releases (@beta)
 1. `cd projects/ks89/ngx-codemirror`
@@ -22,7 +23,8 @@
 3. `cd ../..`
 4. `npm run clean`
 5. `npm run build:lib`
-6. `npm publish @ks89/ngx-codemirror --tag beta`
+6. `cd @ks89/ngx-codemirror`
+7. `npm publish --tag beta`
 
 ## Alpha releases (@next)
 1. `cd projects/ks89/ngx-codemirror`
@@ -30,4 +32,5 @@
 3. `cd ../..`
 4. `npm run clean`
 5. `npm run build:lib`
-6. `npm publish @ks89/ngx-codemirror --tag next`
+6. `cd @ks89/ngx-codemirror`
+7. `npm publish --tag next`
